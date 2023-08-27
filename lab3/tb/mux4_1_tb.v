@@ -1,0 +1,76 @@
+/********************************************************************************************
+
+Copyright 2018-2019 - Maven Silicon Softech Pvt Ltd. All Rights Reserved.
+
+This source code is an unpublished work belongs to Maven Silicon Softech Pvt Ltd.
+It is considered a trade secret and is not to be divulged or used by parties who 
+have not received written authorization from Maven Silicon Softech Pvt Ltd.
+
+Maven Silicon Softech Pvt Ltd
+Bangalore - 560076
+
+Webpage: www.maven-silicon.com
+
+Filename:	mux4_1_tb   
+
+Description:	Testbench for 4:1 Mux
+
+Date:		01/05/2018
+
+Author:		Maven Silicon
+
+Email:		online@maven-silicon.com
+		 
+
+Version:	1.0
+
+*********************************************************************************************/
+
+module mux4_1_tb();
+
+// Declaration of the variables required for testbench
+  reg [1:0]sel;
+  reg [3:0]a;
+  wire y ;
+
+// Declaration of internal variables required for testbench 
+integer i,j;
+
+// Step 1. Instantiate the Design 
+mux4_1 M1(.sel(sel), .a(a), .y(y));
+// Step 2. Define body for the initialize task to initialize inputs of DUT to 0 
+  //task initialize (input [3:0] a, [1:0] sel );
+task initialize;
+//initial
+  begin 
+	//{a,sel} = 0;
+	a = 4'b0000; 
+	sel = 2'b00;	// body here
+  end
+endtask
+
+
+// Step 3. Declare tasks with arguments for driving stimulus to DUT.
+	//initialize(sel,a);	
+task stimulus(input[3:0]i, input[1:0]j);
+	begin
+	#10;
+	sel = j;
+	a = i;
+end
+endtask	
+
+// Step 4. Call the tasks from procedural block  		
+	initial
+	begin
+	initialize; // to avoid unknown state
+	stimulus(4'b1010,2'b10);
+	stimulus(4'b1101,2'b11);
+	stimulus(4'b0100,2'b01);
+	end
+
+// Step 5. Use $monitor task in a parallel initial block  to display inputs and outputs.
+	initial $monitor("Input a=%b, sel=%b Output y=%b",a,sel,y);
+// Step 6. Use $finish task to finish the simulation in a parallel initial block with appropriate delay.
+	initial #100 $finish;
+endmodule

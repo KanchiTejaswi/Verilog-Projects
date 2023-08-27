@@ -1,0 +1,45 @@
+module mux7_1_tb();
+
+reg [6:0]in;
+reg [2:0]s;
+wire out;
+
+integer i,j;
+
+mux7_1 M(.mux_in(in),.sel(s),.mux_out(out));
+
+task initialize;
+	begin
+{in,s} = 0;
+//in = 7'b0000000;
+//s=3'b000;
+
+end
+endtask
+task stimulus (input[6:0]i, input[2:0]j);
+	begin
+#10;
+//s = j;
+//in = i;
+for (j = 0; j<8;j=j+1)
+	s=j;
+	//end
+for (i = 0; i<11;i=i+1)
+	in=i;
+//for (i >= 11)
+	//in = 6'bX;
+	end
+endtask
+
+initial
+	begin
+	initialize;
+	stimulus(i,j);
+	//stimulus(i+1,j+1);//7'b1000110,3'b101);
+	end
+
+initial $monitor ("Input in=%b,s=%b Output out=%b",in,s,out);
+
+initial #100 $finish;
+
+endmodule
