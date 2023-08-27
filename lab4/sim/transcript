@@ -1,0 +1,209 @@
+# Compile of t_ff.v failed with 1 errors.
+# Compile of t_ff.v failed with 1 errors.
+# Compile of t_ff.v failed with 1 errors.
+# Compile of t_ff.v failed with 2 errors.
+# Compile of t_ff.v failed with 2 errors.
+# Compile of t_ff.v failed with 1 errors.
+# Compile of t_ff.v failed with 1 errors.
+# Compile of t_ff.v was successful.
+# Compile of t_ff.v was successful.
+# Compile of t_ff.v was successful.
+vsim -gui work.t_ff
+# vsim -gui work.t_ff 
+# Start time: 07:05:54 on Jul 24,2020
+# Loading work.t_ff
+add wave  \
+sim:/t_ff/t \
+sim:/t_ff/clk \
+sim:/t_ff/clr \
+sim:/t_ff/preset \
+sim:/t_ff/q \
+sim:/t_ff/qb
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+force clr 1 0, 0 10, 1 15
+force preset 1 0,0 10
+force t 0 0, 1 5, 0 10, 1 25
+run
+# Compile of t_ff.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.t_ff
+force t 0 0, 1 5, 0 10, 1 15
+force preset 1 0,0 10
+force clr 1 0, 0 10, 1 15
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+run
+# Compile of t_ff.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.t_ff
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+force clr 1 0, 0 10, 1 15
+force preset 1 0,0 10
+force t 0 0, 1 5, 0 10, 1 15
+run
+restart
+force t 0 0, 1 5, 0 10, 1 15
+force preset 1 0,0 5
+force clr 1 0, 0 10, 1 15
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+run
+# Compile of t_ff.v was successful.
+# Compile of t_ff.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.t_ff
+# Warning in wave window restart: (vish-4014) No objects found matching '/t_ff/qb'. 
+force preset 0 0,1 10
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+force clr 1 0, 0 10
+force t 0 0, 1 5, 0 10, 1 15
+run
+# Compile of t_ff.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.t_ff
+force t 0 0, 1 5, 0 10, 1 15
+force clr 1 0, 0 10
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+force preset 0 0,1 10
+run
+restart
+# Compile of t_ff.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.t_ff
+force preset 0 0,1 10
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+force clr 1 0, 0 10
+force t 0 0, 1 5, 0 10, 1 15
+run
+restart
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+force clr 1 0, 0 10
+force preset 0 0,1 5
+force t 0 0, 1 5, 0 10, 1 15
+run
+quit -sim
+# End time: 07:41:31 on Jul 24,2020, Elapsed time: 0:35:37
+# Errors: 0, Warnings: 1
+# Compile of tff_tb.v failed with 1 errors.
+# Compile of tff_tb.v was successful.
+# Compile of tff_tb.v failed with 6 errors.
+# Compile of tff_tb.v failed with 5 errors.
+# Compile of tff_tb.v failed with 4 errors.
+# Compile of tff_tb.v failed with 5 errors.
+# Compile of tff_tb.v was successful.
+# Compile of tff_tb.v was successful.
+# Compile of tff_tb.v was successful.
+# Compile of tff_tb.v was successful.
+# Compile of t_ff.v was successful.
+vsim -gui work.t_ff
+# vsim -gui work.t_ff 
+# Start time: 08:08:12 on Jul 24,2020
+# Loading work.t_ff
+add wave  \
+sim:/t_ff/t \
+sim:/t_ff/clk \
+sim:/t_ff/clr \
+sim:/t_ff/preset \
+sim:/t_ff/q
+force preset 0 0,1 5
+force t 0 0, 1 5, 0 10, 1 15
+force clr 1 0, 0 10
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+run
+retart
+# invalid command name "retart"
+
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+force clr 1 0, 0 7, 1 15
+force t 0 0, 1 5, 0 10, 1 15, 0 20, 1 25
+force preset 0 0,1 5
+run
+quit -sim
+# End time: 08:12:54 on Jul 24,2020, Elapsed time: 0:04:42
+# Errors: 0, Warnings: 1
+# Compile of t_ff.v was successful.
+vsim -gui work.t_ff
+# vsim -gui work.t_ff 
+# Start time: 08:13:44 on Jul 24,2020
+# Loading work.t_ff
+add wave  \
+sim:/t_ff/t \
+sim:/t_ff/clk \
+sim:/t_ff/clr \
+sim:/t_ff/preset \
+sim:/t_ff/q
+force preset 0 0,1 5
+force t 0 0, 1 5, 0 10, 1 15, 0 20, 1 25
+force clr 1 0, 0 7, 1 15
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+run
+# Compile of t_ff.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.t_ff
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+force clr 1 0, 0 7, 1 15
+force t 0 0, 1 5, 0 10, 1 15, 0 20, 1 25
+force preset 0 0,1 5
+run
+# Compile of t_ff.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.t_ff
+force preset 0 0,1 5
+force t 0 0, 1 5, 0 10, 1 15, 0 20, 1 25
+force clr 1 0, 0 7, 1 15
+force -freeze sim:/t_ff/clk 1 0, 0 {5 ps} -r 10
+run
+quit -sim
+# End time: 08:19:42 on Jul 24,2020, Elapsed time: 0:05:58
+# Errors: 0, Warnings: 1
+# Compile of t_ff.v was successful.
+# Compile of tff_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tff_tb
+# vsim -gui work.tff_tb 
+# Start time: 08:20:39 on Jul 24,2020
+# Loading work.tff_tb
+# Loading work.t_ff
+add wave  \
+sim:/tff_tb/cycle \
+sim:/tff_tb/t \
+sim:/tff_tb/clk \
+sim:/tff_tb/clr \
+sim:/tff_tb/preset \
+sim:/tff_tb/q \
+sim:/tff_tb/i
+run
+# Input t=x,clk=x,clr=0,preset=x Ouput q =0
+# Input t=x,clk=0,clr=0,preset=x Ouput q =0
+# Input t=x,clk=1,clr=1,preset=x Ouput q =0
+# Input t=0,clk=0,clr=1,preset=x Ouput q =0
+# Input t=0,clk=1,clr=1,preset=x Ouput q =0
+# Input t=1,clk=0,clr=1,preset=x Ouput q =0
+# Input t=1,clk=1,clr=1,preset=x Ouput q =1
+# Input t=1,clk=0,clr=1,preset=x Ouput q =1
+# Input t=1,clk=1,clr=1,preset=x Ouput q =0
+# Input t=0,clk=0,clr=1,preset=x Ouput q =0
+# Input t=0,clk=1,clr=1,preset=x Ouput q =0
+# Input t=0,clk=0,clr=1,preset=x Ouput q =0
+# Input t=0,clk=1,clr=1,preset=x Ouput q =0
+# Input t=1,clk=0,clr=0,preset=x Ouput q =0
+# Input t=1,clk=1,clr=0,preset=x Ouput q =0
+# Input t=1,clk=0,clr=1,preset=x Ouput q =0
+# Input t=1,clk=1,clr=1,preset=x Ouput q =1
+# Input t=0,clk=0,clr=1,preset=0 Ouput q =1
+# Input t=0,clk=1,clr=1,preset=0 Ouput q =1
+# Input t=0,clk=0,clr=1,preset=1 Ouput q =1
+# ** Note: $finish    : D:/Verilog_Labs/lab4/tb/tff_tb.v(61)
+#    Time: 100 ps  Iteration: 0  Instance: /tff_tb
+# 1
+# Break in Module tff_tb at D:/Verilog_Labs/lab4/tb/tff_tb.v line 61
+quit -sim
+# End time: 08:24:10 on Jul 24,2020, Elapsed time: 0:03:31
+# Errors: 0, Warnings: 2

@@ -1,0 +1,15 @@
+D:/Verilog_Labs/lab4/rtl/dff.v {1 {vlog -work work -stats=none D:/Verilog_Labs/lab4/rtl/dff.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module d_ff
+
+Top level modules:
+	d_ff
+
+} {} {}} D:/Verilog_Labs/lab4/tb/dff_tb.v {1 {vlog -work work -stats=none D:/Verilog_Labs/lab4/tb/dff_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dff_tb
+
+Top level modules:
+	dff_tb
+
+} {} {}}
