@@ -1,0 +1,15 @@
+D:/Verilog_Labs/lab6/tb/seq_det_tb.v {1 {vlog -work work -stats=none D:/Verilog_Labs/lab6/tb/seq_det_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module seq_det_tb
+
+Top level modules:
+	seq_det_tb
+
+} {} {}} D:/Verilog_Labs/lab6/rtl/seq_det.v {1 {vlog -work work -stats=none D:/Verilog_Labs/lab6/rtl/seq_det.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module seq_det
+
+Top level modules:
+	seq_det
+
+} {} {}}
