@@ -1,0 +1,15 @@
+D:/Verilog_Labs/lab5/rtl/dual_ram.v {1 {vlog -work work -stats=none {D:\Verilog_Labs\lab5\rtl\dual_ram.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dual_ram
+
+Top level modules:
+	dual_ram
+
+} {} {}} D:/Verilog_Labs/lab5/tb/dual_ram_tb.v {1 {vlog -work work -stats=none D:/Verilog_Labs/lab5/tb/dual_ram_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dual_ram_tb
+
+Top level modules:
+	dual_ram_tb
+
+} {} {}}

@@ -1,0 +1,17 @@
+# Compile of ram.v was successful.
+vsim -gui work.ram
+# vsim -gui work.ram 
+# Start time: 14:20:32 on Jul 27,2020
+# Loading work.ram
+add wave  \
+sim:/ram/we \
+sim:/ram/enable \
+sim:/ram/addr \
+sim:/ram/data \
+sim:/ram/mem
+force we 1 0, 0 20
+force enable 0 0, 1 20
+force data 11001001 0
+force addr 1001 0, 0101 20
+force mem[5] 11000010 20
+run
