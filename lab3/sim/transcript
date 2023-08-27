@@ -1,0 +1,95 @@
+# Compile of mux7_1.v failed with 2 errors.
+# Compile of mux7_1.v failed with 3 errors.
+# Compile of mux7_1.v failed with 4 errors.
+# Compile of mux7_1.v was successful.
+vsim -gui work.mux7_1
+# vsim -gui work.mux7_1 
+# Start time: 17:08:37 on Jul 22,2020
+# Loading work.mux7_1
+add wave  \
+sim:/mux7_1/mux_in \
+sim:/mux7_1/sel \
+sim:/mux7_1/mux_out
+force mux_in[0] 0 0, 1 5, 0 10, 1 15, 0 20, 1 25, 0 30, 1 35
+force mux_in[1] 0 0, 0 5, 1 10, 1 15, 0 20, 0 25, 1 30, 1 35
+clear
+# invalid command name "clear"
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force sel[0] 0 0, 1 5, 0 10, 1 15, 0 20, 1 25, 0 30, 1 35
+force sel[1] 0 0, 0 5, 1 10, 1 15, 0 20, 0 25, 1 30, 1 35
+force sel[2] 0 0, 0 5, 0 10, 0 15, 1 20, 1 25, 1 30, 1 35
+force mux_in 0111001
+run
+quit -sim
+# End time: 17:17:25 on Jul 22,2020, Elapsed time: 0:08:48
+# Errors: 0, Warnings: 1
+# Compile of mux7_1_tb.v was successful.
+# Compile of mux7_1_tb.v failed with 3 errors.
+# Compile of mux7_1_tb.v failed with 4 errors.
+# Compile of mux7_1_tb.v failed with 4 errors.
+# Compile of mux7_1_tb.v failed with 4 errors.
+# Compile of mux7_1_tb.v failed with 4 errors.
+clear
+# invalid command name "clear"
+# Compile of mux7_1_tb.v failed with 4 errors.
+# Compile of mux7_1_tb.v failed with 4 errors.
+# Compile of mux7_1_tb.v was successful.
+# Compile of mux7_1_tb.v was successful.
+# Compile of mux7_1_tb.v was successful.
+# Compile of mux7_1_tb.v was successful.
+# Compile of mux7_1_tb.v failed with 1 errors.
+# Compile of mux7_1_tb.v failed with 1 errors.
+# Compile of mux7_1_tb.v was successful.
+vsim -gui work.mux7_1_tb
+# vsim -gui work.mux7_1_tb 
+# Start time: 18:15:32 on Jul 22,2020
+# Loading work.mux7_1_tb
+# Loading work.mux7_1
+add wave  \
+sim:/mux7_1_tb/in \
+sim:/mux7_1_tb/s \
+sim:/mux7_1_tb/out \
+sim:/mux7_1_tb/i \
+sim:/mux7_1_tb/j
+run
+# Input in=0000000,s=000 Output out=0
+# Input in=xxxxxxx,s=xxx Output out=x
+# ** Note: $finish    : D:/Verilog_Labs/lab3/tb/mux7_1_tb.v(38)
+#    Time: 100 ps  Iteration: 0  Instance: /mux7_1_tb
+# 1
+# Break in Module mux7_1_tb at D:/Verilog_Labs/lab3/tb/mux7_1_tb.v line 38
+# Compile of mux7_1_tb.v failed with 1 errors.
+# Compile of mux7_1_tb.v failed with 1 errors.
+# Compile of mux7_1_tb.v was successful.
+# Compile of mux7_1_tb.v was successful.
+# Compile of mux7_1_tb.v failed with 1 errors.
+# Compile of mux7_1_tb.v failed with 1 errors.
+# Compile of mux7_1_tb.v failed with 1 errors.
+# Compile of mux7_1_tb.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mux7_1_tb
+# Compile of mux7_1_tb.v was successful.
+run
+# Input in=0000000,s=000 Output out=0
+# Break key hit
+# Break in Task stimulus at D:/Verilog_Labs/lab3/tb/mux7_1_tb.v line 25
+run -continue
+# Break key hit
+# Break in Task stimulus at D:/Verilog_Labs/lab3/tb/mux7_1_tb.v line 24
+step -over
+# Break key hit
+# Break in Task stimulus at D:/Verilog_Labs/lab3/tb/mux7_1_tb.v line 24
+step -out
+# Break key hit
+# Break in Task stimulus at D:/Verilog_Labs/lab3/tb/mux7_1_tb.v line 24
+step -current
+step -current
+step -current
+# Compile of mux7_1_tb.v failed with 2 errors.
+# Compile of mux7_1_tb.v failed with 2 errors.
+# Compile of mux7_1_tb.v was successful.
+quit -sim
+# End time: 18:30:49 on Jul 22,2020, Elapsed time: 0:15:17
+# Errors: 0, Warnings: 5

@@ -1,0 +1,15 @@
+D:/Verilog_Labs/lab3/rtl/mux7_1.v {1 {vlog -work work -stats=none D:/Verilog_Labs/lab3/rtl/mux7_1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux7_1
+
+Top level modules:
+	mux7_1
+
+} {} {}} D:/Verilog_Labs/lab3/tb/mux7_1_tb.v {1 {vlog -work work -stats=none D:/Verilog_Labs/lab3/tb/mux7_1_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux7_1_tb
+
+Top level modules:
+	mux7_1_tb
+
+} {} {}}
